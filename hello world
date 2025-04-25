@@ -1,0 +1,37 @@
+  User C (Owner) Adds User B as a Collaborator
+o    GitHub → Repository Settings → Collaborators → Add User B → Submit
+
+
+
+2.    User B Forks the Repository & Clones It Locally
+
+git clone https://github.com/durainbrindha/URK24CS1257.git
+cd URK24CS1257
+
+3.    User B Links to the Upstream Repository for Updates
+git remote add upstream https://github.com/durainbrindha/URK24CS1257.git
+
+4.    User B Pulls Latest Changes from the Owner
+git pull upstream main
+
+Note pull in user B in github
+
+5.    User B Creates a New Branch for Work
+git checkout -b urknew
+
+create a file or update ib drive
+
+6.    User B Makes Changes & Commits
+git add .
+git commit -m "Added urknewfile"
+
+7.    User B Pushes Changes to Their Fork
+git push origin urknew
+
+8.    User B Submits a Pull Request on GitHub
+o    Go to the forked repository → Click Compare & Pull Request → Submit
+
+9.    User C Reviews & Merges the Pull Request
+
+10.    User B Syncs with the Owner's Repository for Future Updates
+    git checkout main
